@@ -152,3 +152,15 @@
       -ms-transform: scale(1.5);
       -o-transform: scale(1.5); } }
 
+
+@keyframes banner-imgskew {
+  from {
+    transform: translateY(-30px);
+    opacity: 1;
+    transition: all .3s ease;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+}

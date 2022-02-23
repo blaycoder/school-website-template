@@ -134,7 +134,7 @@
 .section-header {
     text-align: center;
     .cate {
-        color: $theme-one;
+        color: $theme-color;
         font-size: 18px;
         display: block;
         margin-top: -10px;
@@ -317,7 +317,7 @@
             background: $white-color;
             color: $title-color;
             &:hover , &.active {
-                background: $theme-one;
+                background: $theme-color;
                 box-shadow: none;
                 color: $white-color;
             }

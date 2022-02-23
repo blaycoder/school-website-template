@@ -1,6 +1,6 @@
 /*Banner Section Starts Here*/
 .banner-content {
-    max-width: 608px;
+    max-width: 570px;
     border: 4px solid $white-color;
     background: $theme-two;
     padding: 50px 50px 55px;
@@ -12,8 +12,8 @@
         margin-bottom: 6px;
     }
     .title {
-        font-size: 72px;
-        line-height: 80px;
+        font-size: 60px;
+        line-height: 1;
         margin-bottom: 15px;
     }
     p {
@@ -62,7 +62,7 @@
         background: transparent;
         box-shadow: none;
         padding: 0;
-        max-width: 508px;
+        max-width: 500px;
     }
 }
 .banner-thumb {
@@ -123,5 +123,8 @@
         img {
             max-width: 400px;
         }
+    }
+    img {
+        animation: banner-imgskew 5s linear infinite;
     }
 }

@@ -172,7 +172,7 @@ header {
                 }
                 i {
                     font-size: 22px;
-                    color: $body-color;
+                    color: $title-color;
                     margin-top: 24px;
                 }
             }
@@ -321,7 +321,7 @@ header {
                         color: $title-color;
                         font-weight: 500;
                         border-bottom: 1px solid $border-color;
-                        &:hover {
+                        &:hover, &.active {
                             background: $theme-color;
                             padding-left: 22px;
                             color: $white-color;

@@ -431,7 +431,7 @@ div[class*="col"] {
             margin: 0;
             margin-bottom: 0;
             line-height: 1;
-            color: $theme-two;
+            color: $theme-color;
             @include breakpoint(lg) {
                 font-size: 46px;
             }
@@ -472,6 +472,7 @@ div[class*="col"] {
             width: 100%;
             .title {
                 margin-bottom: 5px;
+                color: $theme-two;
                 @include breakpoint(md) {
                     font-size: 36px;
                 }
@@ -582,8 +583,8 @@ div[class*="col"] {
         }
     }
     .class-content {
-        // padding-left: 15px;
-        // padding-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
         .title {
             margin-bottom: 15px;
             @include breakpoint(md) {
@@ -740,7 +741,7 @@ div[class*="col"] {
             }
         }
         .class-single-content {
-            padding: 48px 30px 40px;
+            padding: 30px;
             .title {
                 margin-bottom: 9px;
             }
@@ -807,7 +808,7 @@ div[class*="col"] {
     }
 }
 .single-quote {
-    background: #ff6514;
+    background: $theme-color;
     color: $white-color;
     border-radius: 10px;
     padding: 25px 15px 20px;
@@ -876,9 +877,9 @@ div[class*="col"] {
             padding: 0 15px;
             @include border-radius(3px);
             &:hover , &.active {
-                background: $theme-one;
+                background: $theme-color;
                 color: $white-color;
-                border-color: $theme-one;
+                border-color: $theme-color;
             }
         }
     }
@@ -1074,7 +1075,8 @@ div[class*="col"] {
     }
     .sign {
         width: calc(100% - 310px);
-        padding: 20px;text-align: center;
+        padding: 20px;
+        text-align: center;
         img {
             max-width: 100%;
         }
@@ -1083,6 +1085,7 @@ div[class*="col"] {
         .sign {
             width: 100%;
             padding: 10px;
+            text-align: left;
         }
         .call-item {
             width: 100%;
@@ -1164,6 +1167,7 @@ div[class*="col"] {
             .info {
                 color: $title-color;
                 display: block;
+                font-size: 14px;
                 margin-bottom: 15px;
             }
             p {
@@ -1478,7 +1482,6 @@ div[class*="col"] {
         .title {
             font-family: $heading;
             color: $theme-color;
-            font-weight: 400;
             margin-bottom: 5px;
         }
         p {
@@ -1686,7 +1689,6 @@ div[class*="col"] {
             color: $title-color;
             font-size: 18px;
             font-family: $heading;
-            font-style: italic;
             &::after {
                 content : " )";
             }
@@ -1758,8 +1760,7 @@ div[class*="col"] {
             .title {
                 font-family: $heading;
                 font-weight: 600;
-                font-style: italic;
-                margin-bottom: 14px;
+                margin-bottom: 10px;
             }
         }
         ul {
@@ -1807,7 +1808,7 @@ div[class*="col"] {
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
-    padding: 60px 30px;
+    padding: 50px 30px;
     max-width: 790px;
     margin: 0 auto;
     .title {
@@ -1904,7 +1905,7 @@ div[class*="col"] {
         .title {
             width: calc(100% - 36px);
             padding-left: 15px;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 1.4;
             margin: 0;
             @include transition($transition);
@@ -2032,7 +2033,10 @@ div[class*="col"] {
                     content: "-";
                     margin-left: 5px;
                     margin-right: 5px;
-                    color: $title-color;
+                    color: $white-color;
+                    @include breakpoint(sm) {
+                        color: $title-color;
+                    }
                 }
                 &:hover {
                     color: $theme-color;
@@ -2116,7 +2120,10 @@ div[class*="col"] {
         .events-info {
             li {
                 list-style: none;
-                padding: 0;
+                padding: 3px 0;
+                &:last-child {
+                    padding-bottom: 0;
+                }
                 i {
                     margin-right: 5px;
                     color: $theme-two;
@@ -2537,7 +2544,7 @@ div[class*="col"] {
     thead {
         tr {
             th {
-                background: $theme-two;
+                background: $theme-color;
                 color: #fff;
                 padding: 18px 30px;
                 border: none; 
@@ -2684,7 +2691,7 @@ div[class*="col"] {
     @extend %flex;
     justify-content: space-between;
     @include breakpoint(lg) {
-        max-width: 420px;
+        max-width: 450px;
         text-align: right;
         justify-content: flex-end;
     } 
@@ -2879,7 +2886,7 @@ margin-bottom: 30px; } }
         -moz-transition: all ease 0.3s;
         transition: all ease 0.3s; 
         &.active {
-            color: $theme-one; 
+            color: $theme-color; 
         }
         &:last-child {
             margin-left: 5px; 
@@ -2970,7 +2977,7 @@ margin-bottom: 30px; } }
             margin-bottom: 5px;
             a {
                 &:hover {
-                    color: $theme-one;
+                    color: $theme-color;
                 }
             }
         }
@@ -3475,7 +3482,7 @@ display: block; }
         padding: 10px;
         align-items: center;
         @include breakpoint(sm) {
-            padding: 20px 30px;
+            padding: 30px;
         }
         div[class*="col"] {
             margin-bottom: 30px;
